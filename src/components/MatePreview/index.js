@@ -35,6 +35,17 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       borderRadius: 10,
       flexDirection: 'column',
+      shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.23,
+        shadowRadius: 2.62,
+
+elevation: 4,
+
+elevation: 12,
     },
     bottomPart: {
         flexDirection: 'row',
