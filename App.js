@@ -1,12 +1,13 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {View, StyleSheet, Image} from 'react-native';
-import MatePreview from './src/components/MatePreview';
 
 import HomeScreen from './src/screens/HomeScreen';
 import MatchesScreen from './src/screens/MatchesScreen';
 import MatchesScreenNotUsed from './src/screens/MatchesScreenNotUsed';
-import logo from './assets/images/logo.png';
+import Header from './src/components/Header';
+import Footer from './src/components/Footer';
+
 
 
 const App = ()=> {
@@ -21,15 +22,9 @@ const App = ()=> {
 
   return (
     <View style={styles.pageContainer}>
-      <View style={styles.header}>
-        <Image 
-          source={logo} 
-          style={styles.logo}
-          resizeMode="contain" 
-          />
-      </View>
+      <Header style={styles.header}/>
       <MatchesScreen/>
-      <View style={styles.footer}/>
+      <Footer style={styles.footer}/>
     </View>
   );
 };
@@ -42,29 +37,16 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   header:{
-    backgroundColor: '#bbe8c4',
-    width: '100%',
     flex:0.18,
-    flexDirection:'row',
-    alignItems:'center',
-    justifyContent:'center',
-    borderBottomWidth: 2,
-    borderColor: 'black',
   },
   footer:{
-    backgroundColor: '#bbe8c4',
-    width: '100%',
-    flex:0.15,
-    flexDirection:'row',
-    alignItems:'center',
-    justifyContent:'center',
-    borderTopWidth: 2,
-    borderColor: 'black',
+    flex: 0.18,
   },
+  
   logo:{
     marginTop: 50,
-    flex:1,
-    marginBottom:10,
+    flex: 1,
+    marginBottom: 10,
   },
 });
 

@@ -5,7 +5,6 @@ import users from '../../assets/data/users';
 
 import AnimatedStack from '../components/AnimatedStack';
 
-import logo from '../../assets/images/logo.png';
 
 const HomeScreen = ()=> {
   const onSwipeLeft = user =>{
@@ -35,12 +34,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
   },
-  logo:{
-    marginTop: 50,
-    flex:1,
-    marginBottom:10,
-  },
-
 });
 
 export default HomeScreen;
