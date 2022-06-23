@@ -22,9 +22,9 @@ const App = ()=> {
 
   return (
     <View style={styles.pageContainer}>
-      <Header style={styles.header}/>
+      <Header/>
       <MatchesScreen/>
-      <Footer style={styles.footer}/>
+      <Footer/>
     </View>
   );
 };
@@ -35,18 +35,6 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
     flex: 1,
     width: '100%',
-  },
-  header:{
-    flex:0.18,
-  },
-  footer:{
-    flex: 0.18,
-  },
-  
-  logo:{
-    marginTop: 50,
-    flex: 1,
-    marginBottom: 10,
   },
 });
 
