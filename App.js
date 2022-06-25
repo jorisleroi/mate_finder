@@ -4,10 +4,8 @@ import {View, StyleSheet, Image} from 'react-native';
 
 import HomeScreen from './src/screens/HomeScreen';
 import MatchesScreen from './src/screens/MatchesScreen';
-import MatchesScreenNotUsed from './src/screens/MatchesScreenNotUsed';
 import Header from './src/components/Header';
 import Footer from './src/components/Footer';
-
 
 
 const App = ()=> {
@@ -23,7 +21,7 @@ const App = ()=> {
   return (
     <View style={styles.pageContainer}>
       <Header/>
-      <MatchesScreen/>
+      <HomeScreen/>
       <Footer/>
     </View>
   );

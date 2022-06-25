@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Image, StyleSheet} from 'react-native';
-import Card from '../components/TinderCard';
+import Cardd from '../components/TinderCard2';
 import users from '../../assets/data/users';
 
 import AnimatedStack from '../components/AnimatedStack';
@@ -19,7 +19,7 @@ const HomeScreen = ()=> {
     <View style={styles.pageContainer}>
       <AnimatedStack
         data={users}
-        renderItem={({item}) => <Card user={item}/>}
+        renderItem={({item}) => <Cardd user={item}/>}
         onSwipeRight={onSwipeRight}
         onSwipeLeft={onSwipeLeft}
       />
