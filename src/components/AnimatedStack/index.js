@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   animatedCard:{
-    width: '90%',
+    width: '80%',
     height: '90%',
     justifyContent: 'center',
     alignItems: 'center', 

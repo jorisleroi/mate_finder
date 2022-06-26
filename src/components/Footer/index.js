@@ -3,11 +3,17 @@ import {View, StyleSheet, Image} from 'react-native';
 import swipe_icon from '../../../assets/images/swipe_icon.png';
 import message_icon from '../../../assets/images/message_icon.png';
 import profile_icon from '../../../assets/images/profile_icon.png';
+import {LinearGradient} from 'expo-linear-gradient';
+
 
 
 const Footer = () => {
-    return (      
-      <View style={styles.footer}>
+    return (
+      <LinearGradient
+        start={{ x: 1, y: 0 }}
+        end={{x: 1, y: 1 }}
+        colors={['#023554', '#011C2D', '#000000']}
+        style={styles.footer}>
         <View style={styles.leftPart}>
           <Image 
             source={profile_icon} 
@@ -29,13 +35,13 @@ const Footer = () => {
             style={styles.messageIcon}
           />
         </View>
-      </View>
+      </LinearGradient>
     );
 };
 
 const styles = StyleSheet.create({
   footer:{
-    backgroundColor: '#bbe8c4',
+    backgroundColor: '#023E63',
     width: '100%',
     flex: 0.15,
     alignItems:'center',
@@ -70,7 +76,7 @@ const styles = StyleSheet.create({
   },
   centerPart:{
     flex: 0.34,
-    backgroundColor: 'orange',
+    //backgroundColor: 'orange',
     borderColor: 'black',
     borderWidth: 1,
     padding: 20,

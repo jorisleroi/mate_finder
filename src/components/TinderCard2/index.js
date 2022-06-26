@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text, Image, ImageBackground, View, StyleSheet} from 'react-native';
 import {LinearGradient} from 'expo-linear-gradient';
+import {Divider} from "@rneui/themed";
+
 
 
 const Cardd = (props) => {
@@ -18,12 +20,22 @@ const Cardd = (props) => {
                 </View>
             </ImageBackground>
             <LinearGradient
-                // Background Linear Gradient
                 start={{ x: 0, y: 0 }}
                 end={{x: 1, y: 1 }}
-                colors={['#5851DB', '#C13584', '#E1306C', '#FD1D1D', '#F77737']}
-                style={styles.bottom}
-            />
+                colors={['#023E63', '#023554', '#031723', '#000406']}
+                style={styles.bottom}>
+                <View style={styles.firstTier}>
+                    <Text>ABC</Text>
+                </View>
+                <Divider inset={true} insetType="middle" width={5} borderRadius={5} color="#FFD56A"/>
+                <View style={styles.secondTier}>
+                    <Text>DEF</Text>
+                </View>
+                <Divider inset={true} insetType="middle" width={5} borderRadius={5} color="#FFD56A"/>
+                <View style={styles.thirdTier}>
+                    <Text>GHI</Text>
+                </View>
+            </LinearGradient>
         </View>
     );
 };
@@ -34,7 +46,7 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '100%',
 
-      borderRadius: 10,
+      borderRadius: 20,
       backgroundColor: '#fefefe',
       shadowColor: "#000",
       shadowOffset: {
@@ -44,7 +56,7 @@ const styles = StyleSheet.create({
       shadowOpacity: 0.37,
       shadowRadius: 7.49,
       elevation: 12,
-      borderRadius: 10,
+      borderRadius: 20,
       overflow: 'hidden',
       flexDirection: 'column',
     },
@@ -72,7 +84,15 @@ const styles = StyleSheet.create({
       color:'white',
       lineHeight:25,
     },
-    
+    firstTier:{
+        flex:0.35,
+    },
+    secondTier:{
+        flex:0.35,
+    },
+    thirdTier:{
+        flex:0.3,
+    }, 
   });
 
 export default Cardd;
